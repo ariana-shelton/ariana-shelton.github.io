@@ -283,7 +283,7 @@ span {
     display: inline-block;
 
     justify-content: center;
-    position: relative;
+    /* position: relative; */
 
 }
 
@@ -674,4 +674,9 @@ a:link,
 a:visited {
     text-decoration: none;
     color: inherit;
+}
+@media (max-width: 1050px) {
+.image {
+    display: none;
+}
 }
