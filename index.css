@@ -680,3 +680,22 @@ a:visited {
     display: none;
 }
 }
+#test {
+    height: 1000px;
+}
+.BeforeScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+
+  display: none;
+}
+
+
+/*Use this class when you want your content to be shown after some scroll*/
+.AfterScroll
+{
+  height: 100px; /*Whatever you want*/
+  width: 100%; /*Whatever you want*/
+ display: block;
+}
