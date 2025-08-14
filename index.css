@@ -312,15 +312,11 @@ span {
 }
 
 #resumeTop {
-
-    display: inline;
-
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
     width: 100%;
-
     position: relative;
-
-    /*padding-bottom: 2em;*/
-
 }
 
 #resumeTop:hover {
@@ -341,6 +337,13 @@ span {
 
 }
 
+.imageResumeSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: top;
+}
+
 .sectionContent {
     width: 100%;
     display: inline;
@@ -350,9 +353,9 @@ span {
 }
 
 .imageResumeSection {
-    display: flex;
-    float: left;
-    align-items: center;
+    display: inline-block;
+    vertical-align: top;
+    /* Removed flex styles to allow side-by-side layout */
 }
 
 .imgSide {
@@ -410,6 +413,8 @@ hr {
 
     transform-origin: top;
 
+    margin: 0 1.5em;
+
 }
 
 .resumeImage {
@@ -420,7 +425,9 @@ hr {
 
     padding-right: 2em;
 
-    padding-left: 1em;
+    padding-left: 3em;
+    
+    display: inline-block;
 
 }
 
@@ -597,17 +604,16 @@ footer {
 
 #resumeButton {
 
-    position: absolute;
+    position: static;
 
     width: 15em;
 
     text-align: center;
 
-    float: right;
-
     display: inline-block;
 
     padding: 0.5em;
+    margin-left: 1em;
 
     text-decoration: underline;
 
@@ -618,6 +624,8 @@ footer {
     z-index: 100;
 
     color: lightsteelblue;
+
+    margin-top: 0.5em;
 
 }
 
